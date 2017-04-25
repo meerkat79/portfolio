@@ -1,0 +1,29 @@
+{
+  "name": "irudi",
+  "version": "1.0.0",
+  "description": "portfolio for developer work and experience",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "twig": "^1.10.4"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "SASS",
+    "CSS",
+    "JS",
+    "TWIG",
+    "GULP"
+  ],
+  "author": "Rudi van Litsenborgh",
+  "license": "ISC"
+}
