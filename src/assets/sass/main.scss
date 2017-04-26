@@ -1,55 +1,20 @@
+@import 'variables';
+@import 'fonts';
+
 html, body {
+	font-family: raleway-med, raleway, verdana, sans-serif;
 	height: 100%;
-	padding-top: 25px;
 }
 
 h1 {
-	color: #800000
+	color: $maroon;
 }
 
-.section, .section, .section {
-	width: 100%;
-}
-
-.section--white {
-	background: #fff;
-}
-
-.section--gray {
-	background: #e0e0e0
-}
-
-.section--black {
-	background: #333
-}
-
-.section--top-m-50{
-	margin-top: 50px;
-}
-
-.parallax {
-
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.parallax-1 {
-	background-image: url("../img/air.jpg");
-	height: 100vh;
-}
-
-.parallax-2 {
-	background-image: url("../img/air.jpg");
-	height: 600px;
-}
-
-.parallax-3 {
-	background-image: url("../img/lamps.jpg");
-
-	height: 600px;
-}
+@import 'nav';
+@import 'sidebar';
+@import 'section';
+@import 'parallax';
+@import 'bootstrap-overwrites';
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {

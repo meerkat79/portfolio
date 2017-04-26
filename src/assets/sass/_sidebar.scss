@@ -1,0 +1,24 @@
+aside {
+	position: fixed;
+    top: 0px;	
+	display: none;
+	width: 20%;
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1000;
+
+    ul{
+    	list-style: none;
+    	padding: 1em;
+    	li {
+    		padding: 1em;
+    	}
+    }    
+}
+
+aside.sidebar{
+    right: 0px;
+}
+aside.social {
+	left: 0px;
+}

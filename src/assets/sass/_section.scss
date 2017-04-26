@@ -1,0 +1,29 @@
+.section, .section, .section {
+
+	width: 100%;
+
+	&-header {
+		h1{
+			font-family: raleway-thin;
+			font-size: 5em;
+			padding-top: 5em;
+		}
+	}
+
+	&--white{
+		background: $white;	
+	}
+	&--gray{
+		background: $gray
+	}
+	&--black{
+		background: $black	
+	}
+	&--top-m-50{
+		margin-top: 50px;
+	}
+}
+
+.section1, .section2, .section3, .section4 {
+	padding-top: 50px;
+}

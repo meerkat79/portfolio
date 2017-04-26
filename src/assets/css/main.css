@@ -1,42 +1,102 @@
+/* Colors */
+@font-face {
+  font-family: raleway-thin;
+  src: url(../fonts/raleway/Raleway-Thin.ttf); }
+
+@font-face {
+  font-family: raleway;
+  src: url(../fonts/raleway/Raleway-Regular.ttf); }
+
+@font-face {
+  font-family: raleway-med;
+  src: url(../fonts/raleway/Raleway-Medium.ttf); }
+
+@font-face {
+  font-family: raleway-bold;
+  src: url(../fonts/raleway/Raleway-Bold.ttf); }
+
 html, body {
-  height: 100%;
-  padding-top: 25px; }
+  font-family: raleway-med, raleway, verdana, sans-serif;
+  height: 100%; }
 
 h1 {
   color: #800000; }
 
+.navbar-header {
+  width: 100%; }
+  .navbar-header .fa {
+    color: #800000; }
+  .navbar-header button {
+    background-color: transparent; }
+    .navbar-header button i.fa {
+      font-size: 36px;
+      margin-top: 28px; }
+  .navbar-header .button--m-r-12 {
+    margin-right: 12em; }
+  .navbar-header .button--m-l-12 {
+    margin-left: 12em; }
+
+aside {
+  position: fixed;
+  top: 0px;
+  display: none;
+  width: 20%;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1000; }
+  aside ul {
+    list-style: none;
+    padding: 1em; }
+    aside ul li {
+      padding: 1em; }
+
+aside.sidebar {
+  right: 0px; }
+
+aside.social {
+  left: 0px; }
+
 .section, .section, .section {
   width: 100%; }
+  .section-header h1, .section-header h1, .section-header h1 {
+    font-family: raleway-thin;
+    font-size: 5em;
+    padding-top: 5em; }
+  .section--white, .section--white, .section--white {
+    background: #ffffff; }
+  .section--gray, .section--gray, .section--gray {
+    background: #ffffff; }
+  .section--black, .section--black, .section--black {
+    background: #333333; }
+  .section--top-m-50, .section--top-m-50, .section--top-m-50 {
+    margin-top: 50px; }
 
-.section--white {
-  background: #fff; }
-
-.section--gray {
-  background: #e0e0e0; }
-
-.section--black {
-  background: #333; }
-
-.section--top-m-50 {
-  margin-top: 50px; }
+.section1, .section2, .section3, .section4 {
+  padding-top: 50px; }
 
 .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .parallax-1 {
+    background-image: url("../img/sky.jpg");
+    height: 100vh; }
+  .parallax-2 {
+    background-image: url("../img/air.jpg");
+    height: 600px; }
+  .parallax-3 {
+    background-image: url("../img/lamps.jpg");
+    height: 600px; }
 
-.parallax-1 {
-  background-image: url("../img/air.jpg");
-  height: 100vh; }
+.navbar {
+  background-image: none;
+  background-color: transparent; }
 
-.parallax-2 {
-  background-image: url("../img/air.jpg");
-  height: 600px; }
-
-.parallax-3 {
-  background-image: url("../img/lamps.jpg");
-  height: 600px; }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {

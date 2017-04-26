@@ -1,0 +1,23 @@
+.navbar-header {
+	width: 100%;
+
+	.fa{
+		color: $maroon;
+	}
+
+	button {
+		background-color: transparent;
+
+		i.fa{
+			font-size: 36px;
+			margin-top: 28px;			
+		}
+	}
+
+	.button--m-r-12{
+		margin-right: 12em;
+	}
+	.button--m-l-12{
+		margin-left: 12em;
+	}	
+}

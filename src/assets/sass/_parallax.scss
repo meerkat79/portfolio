@@ -1,0 +1,23 @@
+.parallax {
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&-1 {
+		background-image: url("../img/sky.jpg");
+		height: 100vh;
+	}
+
+	&-2 {
+		background-image: url("../img/air.jpg");
+		height: 600px;
+	}
+	&-3 {
+		background-image: url("../img/lamps.jpg");
+
+		height: 600px;
+	}	
+
+}

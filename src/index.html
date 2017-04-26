@@ -1,103 +1,126 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+	<title>IRUDI.ME</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/boilerplate.css">    
-    <link rel="stylesheet" href="assets/css/flash--maroon.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/boilerplate.css">
+	<link rel="stylesheet" href="assets/css/pace/barber--maroon.css">
+	<link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6"> 
-                    <ul class="nav navbar-nav"> 
-                        <li class="active"><a href="#home">Home</a></li> 
-                        <li><a href="#section2">Section 2</a></li>
-                        <li><a href="#section3">Section 3</a></li>
-                        <li><a href="#section4">Section 4</a></li>
-                    </ul> 
-                </div>
-            </div>
-        </nav>
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-        <div id="home" class="section section--white parallax parallax-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Section 1</h1>    
-                    </div>
-                </div>
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button id="bars" class="btn pull-right button--m-r-12"  data-toggle="collapse" data-target="#sidebar-nav">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
+					<button id="social" class="btn button--m-l-12" data-toggle="collapse" data-target="#sidebar-social">
+						<i class="fa fa-share-alt" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
 
-            </div>
-        </div>
+		<aside id="sidebar-nav" class="sidebar">
+			<ul>
+				<li><a href="#">&nbsp;</a></li>
+				<li><a href="#section1">Home</a></li>
+				<li><a href="#section2">About Me</a></li>
+				<li><a href="#section3">Skills</a></li>
+			</ul>
+		</aside>
 
-        <div id="section2" class="section section--gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Section 2</h1>    
-                    </div>
-                </div>
+		<aside id="sidebar-social" class="social">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/CreativeTim">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+					<a href="https://twitter.com/CreativeTim">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="https://plus.google.com/+CreativetimPage">
+						<i class="fa fa-google-plus-square"></i>
+					</a>
+					<a href="https://dribbble.com/creativetim">
+						<i class="fa fa-dribbble"></i>
+					</a>
+				</li>
+			</ul>
+		</aside>
 
-            </div>
-        </div>
-
-
-        <div id="section3" class="section section--gray parallax parallax-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Section 3</h1>    
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="section4" class="section section--black parallax parallax-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Section 4</h1>    
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.js"></script>    
-        <script src="js/vendor/twig.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/vendor/pace.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-49996901-1','auto');ga('send','pageview');
-        </script>
-    </body>
-    </html>
+	<div id="section1" class="section section--white parallax parallax-1 section1">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="section-header">
+						<h1 class="text-center">IRUDI.ME</h1>
+						<h2 class="text-center">Web Developer | Aesthetic Connoisseur | Web Programmer</h2>
+					</div>
+					<img src="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section2" class="section section--gray section2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-center">Section 2</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section3" class="section section--gray parallax parallax-2 section3">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-center">Section 3</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section4" class="section section--black parallax parallax-3 section4">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-center">Section 4</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+	<script src="js/vendor/bootstrap.js"></script>
+	<script src="js/vendor/twig.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/vendor/pace.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-49996901-1','auto');ga('send','pageview');
+	</script>
+</body>
+</html>
