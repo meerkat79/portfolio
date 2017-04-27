@@ -4,9 +4,20 @@
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-    outline: none;
+	outline: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;    
+}
+
+/*Extends here as bootstrap sass files not included*/
+
+.btn-maroon, .btn-maroon:active, .btn-maroon:focus {
+	background: -moz-linear-gradient(left, rgba(128,0,0,1) 0%, rgba(127,0,0,0.66) 100%);
+	background: -webkit-linear-gradient(left, rgba(128,0,0,1) 0%,rgba(127,0,0,0.66) 100%);
+	background: linear-gradient(to right, rgba(128,0,0,1) 0%,rgba(127,0,0,0.66) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800000', endColorstr='#a87f0000',GradientType=1 );
+
+	border: 1px solid $maroon;
 }
 
 a{

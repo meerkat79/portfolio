@@ -1,16 +1,27 @@
 #vortex {
-	width: 300px;
+	width: 600px;
 	height: 300px;
 	position: relative;
 	margin: 2em auto 4em;
 }
 
 #vortex.vortex-animating > * {
-	background-color: $gray;
+	background-color: $light-gray;
 }
 
 .vortex-tile {
 	width: 110px;
 	height: 115px;
 	border-radius: 10px;
+	background-color: $light-gray;
+
+	.skill-tile{
+		margin: auto;
+	}
+}
+
+@media screen and (max-device-width: 600px){
+	#vortex {
+		width: 300px;
+	}
 }
