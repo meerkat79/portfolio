@@ -1,29 +1,101 @@
-.section, .section, .section {
+.section {
 
 	width: 100%;
 
-	&-header {
+	&-main-header {
 		h1{
 			font-family: raleway-thin;
 			font-size: 5em;
-			padding-top: 5em;
-		}
+			padding-top: 3em;		
+
+			&:after{
+				display: block;
+				content: '';
+				width: 40%;
+				height: 1px;
+				margin: auto;
+				border-bottom: 1px solid $maroon;
+
+				@media screen and (max-width: 1000px){
+					width: 50%;
+				}
+				@media screen and (max-width: 600px){
+					width: 65%;
+				}
+				@media screen and (max-width: 400px){
+					width: 100%;
+				}
+			}
+		}			
 	}
+	&-header {
+		h1{
+			font-family: raleway-thin;
+			font-size: 4em;
+
+			&:after{
+				display: block;
+				content: '';
+				width: 25%;
+				height: 1px;
+				margin: auto;
+				border-bottom: 1px solid $maroon;
+
+				@media screen and (max-width: 1000px){
+					width: 50%;
+				}
+				@media screen and (max-width: 600px){
+					width: 65%;
+				}
+				@media screen and (max-width: 400px){
+					width: 100%;
+				}
+			}			
+		}
+	}	
 
 	&--white{
-		background: $white;	
+		background: $white;
+		color: $black;
 	}
 	&--gray{
-		background: $gray
+		background: $gray;
+		color: $black;
 	}
 	&--black{
-		background: $black	
+		background: $black;
+		color: $white;
 	}
 	&--top-m-50{
 		margin-top: 50px;
 	}
+
+	.well{
+		background-color: rgba(245, 245, 245, 0.5);
+		background-image: none;
+	}
+
+	.profile-img {
+		width: 200px;
+		height: 200px;
+		padding: 0.5em;
+		float: left;
+	}
+	.work-imgs	{
+		width: 100%;
+		padding-bottom: 1.5em;
+	}
 }
 
-.section1, .section2, .section3, .section4 {
-	padding-top: 50px;
+.section-main-header.fadeIn{
+	-webkit-animation-duration: 7s;
+	-moz-animation-duration: 7s;
+	-o-animation-duration: 7s;
+	-ms-animation-duration: 7s;
+}
+.section-header.slideInLeft, .section-header.slideInRight{
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	-ms-animation-duration: 5s;
 }

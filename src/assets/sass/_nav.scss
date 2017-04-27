@@ -15,9 +15,11 @@
 	}
 
 	.button--m-r-12{
-		margin-right: 12em;
+	    position: fixed;
+	    right: 21%;
 	}
 	.button--m-l-12{
-		margin-left: 12em;
+	    position: fixed;
+	    left: 21%;
 	}	
 }

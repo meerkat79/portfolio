@@ -1,24 +1,29 @@
 aside {
 	position: fixed;
-    top: 0px;	
+	top: 0px;	
 	display: none;
 	width: 20%;
-    min-height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index: 1000;
+	min-height: 100%;
+	background-color: rgba(255, 255, 255, 0.4);
+	z-index: 1000;
 
-    ul{
-    	list-style: none;
-    	padding: 1em;
-    	li {
-    		padding: 1em;
-    	}
-    }    
+	ul{
+		list-style: none;
+		padding: 1em;
+		li {
+			padding: 0.5em;
+			margin: auto;
+			text-align: center;
+			font-size: 1.5em;
+		}
+	}    
 }
 
 aside.sidebar{
-    right: 0px;
+	right: 10px;
+	-webkit-animation-duration: 1s;
 }
 aside.social {
-	left: 0px;
+	left: 10px;
+	-webkit-animation-duration: 1s;	
 }

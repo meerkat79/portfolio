@@ -17,7 +17,8 @@
 
 html, body {
   font-family: raleway-med, raleway, verdana, sans-serif;
-  height: 100%; }
+  height: 100%;
+  font-size: 21px; }
 
 h1 {
   color: #800000; }
@@ -32,9 +33,11 @@ h1 {
       font-size: 36px;
       margin-top: 28px; }
   .navbar-header .button--m-r-12 {
-    margin-right: 12em; }
+    position: fixed;
+    right: 21%; }
   .navbar-header .button--m-l-12 {
-    margin-left: 12em; }
+    position: fixed;
+    left: 21%; }
 
 aside {
   position: fixed;
@@ -48,31 +51,94 @@ aside {
     list-style: none;
     padding: 1em; }
     aside ul li {
-      padding: 1em; }
+      padding: 0.5em;
+      margin: auto;
+      text-align: center;
+      font-size: 1.5em; }
 
 aside.sidebar {
-  right: 0px; }
+  right: 10px;
+  -webkit-animation-duration: 1s; }
 
 aside.social {
-  left: 0px; }
+  left: 10px;
+  -webkit-animation-duration: 1s; }
 
-.section, .section, .section {
+.section {
   width: 100%; }
-  .section-header h1, .section-header h1, .section-header h1 {
+  .section-main-header h1 {
     font-family: raleway-thin;
     font-size: 5em;
-    padding-top: 5em; }
-  .section--white, .section--white, .section--white {
-    background: #ffffff; }
-  .section--gray, .section--gray, .section--gray {
-    background: #ffffff; }
-  .section--black, .section--black, .section--black {
-    background: #333333; }
-  .section--top-m-50, .section--top-m-50, .section--top-m-50 {
+    padding-top: 3em; }
+    .section-main-header h1:after {
+      display: block;
+      content: '';
+      width: 40%;
+      height: 1px;
+      margin: auto;
+      border-bottom: 1px solid #800000; }
+      @media screen and (max-width: 1000px) {
+        .section-main-header h1:after {
+          width: 50%; } }
+      @media screen and (max-width: 600px) {
+        .section-main-header h1:after {
+          width: 65%; } }
+      @media screen and (max-width: 400px) {
+        .section-main-header h1:after {
+          width: 100%; } }
+  .section-header h1 {
+    font-family: raleway-thin;
+    font-size: 4em; }
+    .section-header h1:after {
+      display: block;
+      content: '';
+      width: 25%;
+      height: 1px;
+      margin: auto;
+      border-bottom: 1px solid #800000; }
+      @media screen and (max-width: 1000px) {
+        .section-header h1:after {
+          width: 50%; } }
+      @media screen and (max-width: 600px) {
+        .section-header h1:after {
+          width: 65%; } }
+      @media screen and (max-width: 400px) {
+        .section-header h1:after {
+          width: 100%; } }
+  .section--white {
+    background: #ffffff;
+    color: #000000; }
+  .section--gray {
+    background: rgba(51, 51, 51, 0.7);
+    color: #000000; }
+  .section--black {
+    background: #000000;
+    color: #ffffff; }
+  .section--top-m-50 {
     margin-top: 50px; }
+  .section .well {
+    background-color: rgba(245, 245, 245, 0.5);
+    background-image: none; }
+  .section .profile-img {
+    width: 200px;
+    height: 200px;
+    padding: 0.5em;
+    float: left; }
+  .section .work-imgs {
+    width: 100%;
+    padding-bottom: 1.5em; }
 
-.section1, .section2, .section3, .section4 {
-  padding-top: 50px; }
+.section-main-header.fadeIn {
+  -webkit-animation-duration: 7s;
+  -moz-animation-duration: 7s;
+  -o-animation-duration: 7s;
+  -ms-animation-duration: 7s; }
+
+.section-header.slideInLeft, .section-header.slideInRight {
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  -ms-animation-duration: 5s; }
 
 .parallax {
   background-attachment: fixed;
@@ -84,10 +150,10 @@ aside.social {
     height: 100vh; }
   .parallax-2 {
     background-image: url("../img/air.jpg");
-    height: 600px; }
+    height: 100%; }
   .parallax-3 {
-    background-image: url("../img/lamps.jpg");
-    height: 600px; }
+    background-image: url("../img/lamps-faded.jpg");
+    height: 100%; }
 
 .navbar {
   background-image: none;
@@ -97,6 +163,11 @@ aside.social {
   outline: none;
   box-shadow: none;
   -webkit-box-shadow: none; }
+
+a {
+  color: #000000; }
+  a:focus, a:active, a:visited {
+    color: #000000; }
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
