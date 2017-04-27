@@ -25,7 +25,6 @@ gulp.task('watch', function () {
 	gulp.watch(['./src/*.html'], ['reload']);
 	gulp.watch(['./src/js/*.js'], ['reload']);
 	gulp.watch('./src/assets/sass/*.scss', ['sass', 'reload']);
-	gulp.watch('./src/assets/sass/_*.scss', ['sass', 'reload']);
 });
 
 gulp.task('default', ['connect', 'watch', 'sass']);

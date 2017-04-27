@@ -15,7 +15,17 @@ h1 {
 @import 'sidebar';
 @import 'section';
 @import 'parallax';
+@import 'vortex';
 @import 'bootstrap-overwrites';
+
+/* Some helper classes, will be moved to own partial if grows */
+
+.m-t-1 {
+	margin-top: 1em;
+}
+.m-b-1 {
+	margin-bottom: 1em;
+}
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
