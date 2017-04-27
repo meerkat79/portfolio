@@ -15,9 +15,13 @@
   font-family: raleway-bold;
   src: url(../fonts/raleway/Raleway-Bold.ttf); }
 
+@font-face {
+  font-family: raleway-bold-italic;
+  src: url(../fonts/raleway/Raleway-SemiBoldItalic.ttf); }
+
 html, body {
-  font-family: raleway-med, raleway, verdana, sans-serif;
   height: 100%;
+  font-family: raleway-med, raleway, verdana, sans-serif;
   font-size: 21px; }
 
 h1 {
@@ -30,7 +34,7 @@ h1 {
   .navbar-header button {
     background-color: transparent; }
     .navbar-header button i.fa {
-      font-size: 36px;
+      font-size: 3em;
       margin-top: 28px; }
   .navbar-header .button--m-r-12 {
     position: fixed;
@@ -44,7 +48,7 @@ aside {
   top: 0px;
   display: none;
   width: 20%;
-  min-height: 100%;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.4);
   z-index: 1000; }
   aside ul {
@@ -55,6 +59,15 @@ aside {
       margin: auto;
       text-align: center;
       font-size: 1.5em; }
+  aside .name {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #800000; }
+    aside .name h3 {
+      font-family: raleway-thin;
+      font-weight: 600; }
 
 aside.sidebar {
   right: 10px;
@@ -77,6 +90,9 @@ aside.social {
     height: 200px;
     padding: 0.5em;
     float: left; }
+  .section .phone-box {
+    width: 100%;
+    height: 615px; }
   .section .work-imgs {
     width: 100%;
     padding-bottom: 1.5em; }
@@ -84,6 +100,9 @@ aside.social {
     font-family: raleway-thin;
     font-size: 5em;
     padding-top: 3em; }
+    @media (max-width: 400px) {
+      .section-main-header h1 {
+        font-size: 2em; } }
     .section-main-header h1:after {
       display: block;
       content: '';
@@ -91,20 +110,21 @@ aside.social {
       height: 1px;
       margin: auto;
       border-bottom: 1px solid #800000; }
-      @media screen and (max-width: 1000px) {
+      @media (max-width: 1000px) {
         .section-main-header h1:after {
           width: 50%; } }
-      @media screen and (max-width: 600px) {
+      @media (max-width: 600px) {
         .section-main-header h1:after {
           width: 65%; } }
-      @media screen and (max-width: 400px) {
+      @media (max-width: 400px) {
         .section-main-header h1:after {
           width: 100%; } }
   .section-header {
     padding-bottom: 1em; }
     .section-header h1 {
       font-family: raleway-thin;
-      font-size: 4em; }
+      font-size: 4em;
+      font-weight: 900; }
       .section-header h1:after {
         display: block;
         content: '';
@@ -112,15 +132,17 @@ aside.social {
         height: 1px;
         margin: auto;
         border-bottom: 1px solid #800000; }
-        @media screen and (max-width: 1000px) {
+        @media (max-width: 1000px) {
           .section-header h1:after {
             width: 50%; } }
-        @media screen and (max-width: 600px) {
+        @media (max-width: 600px) {
           .section-header h1:after {
             width: 65%; } }
-        @media screen and (max-width: 400px) {
+        @media (max-width: 400px) {
           .section-header h1:after {
             width: 100%; } }
+  .section-content {
+    margin: 1em auto; }
   .section--white {
     background: #ffffff;
     color: #000000; }
@@ -130,8 +152,14 @@ aside.social {
   .section--black {
     background: #000000;
     color: #ffffff; }
+  .section--pale {
+    background: #E8EAF6;
+    color: #000000; }
   .section--top-m-50 {
     margin-top: 50px; }
+
+.section1 {
+  height: 100%; }
 
 .section-main-header.fadeIn {
   -webkit-animation-duration: 7s;
@@ -151,21 +179,19 @@ aside.social {
   background-repeat: no-repeat;
   background-size: cover; }
   .parallax-1 {
-    background-image: url("../img/sky.jpg");
-    height: 100vh; }
+    background-image: url("../img/sky.jpg"); }
   .parallax-2 {
-    background-image: url("../img/air.jpg");
-    height: 100%; }
+    background-image: url("../img/air.jpg"); }
   .parallax-3 {
-    background-image: url("../img/lamps-faded.jpg");
-    height: 100%; }
+    background-image: url("../img/lamps-faded.jpg"); }
   .parallax-4 {
-    background-image: url("../img/stars.jpg");
-    height: 100%; }
+    background-image: url("../img/stars.jpg"); }
   .parallax-5 {
     background-image: url("../img/cityview2-faded.jpg"); }
   .parallax-6 {
     background-image: url("../img/park-faded.jpg"); }
+  .parallax-7 {
+    background-image: url("../img/map-faded.jpg"); }
 
 #vortex {
   width: 600px;
@@ -184,13 +210,12 @@ aside.social {
   .vortex-tile .skill-tile {
     margin: auto; }
 
-@media screen and (max-device-width: 600px) {
+@media (max-device-width: 600px) {
   #vortex {
     width: 300px; } }
 
 .navbar {
-  background-image: none;
-  background-color: transparent; }
+  background-image: none; }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
@@ -217,7 +242,24 @@ a {
 .m-b-1 {
   margin-bottom: 1em; }
 
+.arrow-down {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center; }
+  .arrow-down .fa {
+    font-size: 2.5em;
+    color: #800000; }
+
+.arrow-up {
+  position: fixed;
+  right: 15px;
+  bottom: 0; }
+  .arrow-up .fa {
+    font-size: 2.5em;
+    color: #800000; }
+
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
+@media (max-device-width: 1024px) {
   .parallax {
     background-attachment: scroll; } }

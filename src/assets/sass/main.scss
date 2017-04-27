@@ -2,8 +2,8 @@
 @import 'fonts';
 
 html, body {
-	font-family: raleway-med, raleway, verdana, sans-serif;
 	height: 100%;
+	font-family: raleway-med, raleway, verdana, sans-serif;
 	font-size: 21px;
 }
 
@@ -27,8 +27,31 @@ h1 {
 	margin-bottom: 1em;
 }
 
+.arrow-down {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+
+	.fa{
+		font-size: 2.5em;
+		color: $maroon;
+	}	
+}
+
+.arrow-up {
+	position: fixed;
+	right: 15px;
+	bottom: 0;
+		
+	.fa{
+		font-size: 2.5em;
+		color: $maroon;
+	}		
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
+@media (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
     }
