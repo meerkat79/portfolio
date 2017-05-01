@@ -1,0 +1,56 @@
+.project-img {
+	display: block;
+	width: 100%;
+	height: 180px;	
+	background-size: 100%;
+
+	&--contact{
+		background-image: url('../img/projects/contact-bw.jpg');    
+		background-repeat: no-repeat;
+
+		&:hover {
+			background-image: url('../img/projects/contact.jpg');  
+		}
+	}
+
+	&--how-guides{
+		background-image: url('../img/projects/how-guides-bw.jpg');    
+		background-repeat: no-repeat;
+		&:hover {
+			background-image: url('../img/projects/how-guides.jpg');  
+		}		
+	}
+
+	&--mobile{
+		background-image: url('../img/projects/mobile-bw.jpg');    
+		background-repeat: no-repeat;
+		&:hover {
+			background-image: url('../img/projects/mobile.jpg');  
+		}			
+	}	
+
+	&--classics{
+		background-image: url('../img/projects/classics-bw.jpg');    
+		background-repeat: no-repeat;
+
+		&:hover {
+			background-image: url('../img/projects/classics.jpg');  
+		}
+	}
+
+	&--biblio{
+		background-image: url('../img/projects/biblio-bw.jpg');    
+		background-repeat: no-repeat;
+		&:hover {
+			background-image: url('../img/projects/biblio.jpg');  
+		}		
+	}
+
+	&--todo{
+		background-image: url('../img/projects/todo-bw.jpg');    
+		background-repeat: no-repeat;
+		&:hover {
+			background-image: url('../img/projects/todo.jpg');  
+		}			
+	}
+}

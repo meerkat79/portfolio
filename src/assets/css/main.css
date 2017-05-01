@@ -41,7 +41,8 @@ h1 {
     right: 21%; }
   .navbar-header .button--m-l-12 {
     position: fixed;
-    left: 21%; }
+    left: 21%;
+    top: 0; }
 
 aside {
   position: fixed;
@@ -83,19 +84,17 @@ aside.social {
     position: absolute;
     width: 100%; }
   .section .well {
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.65);
     background-image: none; }
   .section .profile-img {
     width: 200px;
     height: 200px;
-    padding: 0.5em;
-    float: left; }
+    padding: 0.5em; }
   .section .phone-box {
     width: 100%;
     height: 615px; }
   .section .work-imgs {
-    width: 100%;
-    padding-bottom: 1.5em; }
+    width: 100%; }
   .section-main-header h1 {
     font-family: raleway-thin;
     font-size: 5em;
@@ -191,7 +190,7 @@ aside.social {
   .parallax-6 {
     background-image: url("../img/park-faded.jpg"); }
   .parallax-7 {
-    background-image: url("../img/map-faded.jpg"); }
+    background-image: url("../img/map.jpg"); }
 
 #vortex {
   width: 600px;
@@ -213,6 +212,42 @@ aside.social {
 @media (max-device-width: 600px) {
   #vortex {
     width: 300px; } }
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-size: 100%; }
+  .project-img--contact {
+    background-image: url("../img/projects/contact-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--contact:hover {
+      background-image: url("../img/projects/contact.jpg"); }
+  .project-img--how-guides {
+    background-image: url("../img/projects/how-guides-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--how-guides:hover {
+      background-image: url("../img/projects/how-guides.jpg"); }
+  .project-img--mobile {
+    background-image: url("../img/projects/mobile-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--mobile:hover {
+      background-image: url("../img/projects/mobile.jpg"); }
+  .project-img--classics {
+    background-image: url("../img/projects/classics-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--classics:hover {
+      background-image: url("../img/projects/classics.jpg"); }
+  .project-img--biblio {
+    background-image: url("../img/projects/biblio-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--biblio:hover {
+      background-image: url("../img/projects/biblio.jpg"); }
+  .project-img--todo {
+    background-image: url("../img/projects/todo-bw.jpg");
+    background-repeat: no-repeat; }
+    .project-img--todo:hover {
+      background-image: url("../img/projects/todo.jpg"); }
 
 .navbar {
   background-image: none; }
@@ -258,6 +293,15 @@ a {
   .arrow-up .fa {
     font-size: 2.5em;
     color: #800000; }
+
+.repos {
+  margin: auto; }
+  .repos ul {
+    list-style: none;
+    padding: 0; }
+  .repos .repo {
+    float: none;
+    margin: auto; }
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media (max-device-width: 1024px) {

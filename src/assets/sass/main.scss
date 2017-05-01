@@ -16,6 +16,7 @@ h1 {
 @import 'section';
 @import 'parallax';
 @import 'vortex';
+@import 'project';
 @import 'bootstrap-overwrites';
 
 /* Some helper classes, will be moved to own partial if grows */
@@ -48,6 +49,21 @@ h1 {
 		font-size: 2.5em;
 		color: $maroon;
 	}		
+}
+
+.repos{
+	margin: auto;
+
+	ul{
+		list-style: none;
+		padding: 0;
+	}
+
+	.repo {
+    float: none;
+    margin: auto;		
+	}
+
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
