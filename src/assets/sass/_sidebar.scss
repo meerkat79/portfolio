@@ -7,6 +7,11 @@ aside {
 	background-color: rgba(255, 255, 255, 0.4);
 	z-index: 1000;
 
+	@media (max-width: 1023px){
+		width: 30%;
+		background-color: $white;
+	}
+
 	ul{
 		list-style: none;
 		padding: 1em;
@@ -25,17 +30,29 @@ aside {
 		color: $maroon;
 
 		h3{
-		font-family: raleway-thin;
-		font-weight: 600;			
+			font-family: raleway-thin;
+			font-weight: 600;			
 		}	
 	}
 }
 
+aside.sidebar {
+	-webkit-animation-duration: 1s;	
+}
+
 aside.sidebar{
 	right: 10px;
-	-webkit-animation-duration: 1s;
+
+	@media (max-width: 600px){
+		width: 80%;
+		right: 0;
+	}
 }
 aside.social {
 	left: 10px;
-	-webkit-animation-duration: 1s;	
+
+	@media (max-width: 600px){
+		width: 80%;		
+		left: 0;
+	}	
 }

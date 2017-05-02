@@ -35,14 +35,27 @@ h1 {
     background-color: transparent; }
     .navbar-header button i.fa {
       font-size: 3em;
-      margin-top: 28px; }
+      margin-top: 28px;
+      top: 0; }
   .navbar-header .button--m-r-12 {
     position: fixed;
-    right: 21%; }
+    right: 17%; }
+    @media (max-width: 1023px) {
+      .navbar-header .button--m-r-12 {
+        right: 25%; } }
+    @media (max-width: 600px) {
+      .navbar-header .button--m-r-12 {
+        right: 17%; } }
   .navbar-header .button--m-l-12 {
     position: fixed;
-    left: 21%;
+    left: 17%;
     top: 0; }
+    @media (max-width: 1023px) {
+      .navbar-header .button--m-l-12 {
+        left: 25%; } }
+    @media (max-width: 600px) {
+      .navbar-header .button--m-l-12 {
+        left: 17%; } }
 
 aside {
   position: fixed;
@@ -52,6 +65,10 @@ aside {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.4);
   z-index: 1000; }
+  @media (max-width: 1023px) {
+    aside {
+      width: 30%;
+      background-color: #ffffff; } }
   aside ul {
     list-style: none;
     padding: 1em; }
@@ -71,12 +88,21 @@ aside {
       font-weight: 600; }
 
 aside.sidebar {
-  right: 10px;
   -webkit-animation-duration: 1s; }
 
+aside.sidebar {
+  right: 10px; }
+  @media (max-width: 600px) {
+    aside.sidebar {
+      width: 80%;
+      right: 0; } }
+
 aside.social {
-  left: 10px;
-  -webkit-animation-duration: 1s; }
+  left: 10px; }
+  @media (max-width: 600px) {
+    aside.social {
+      width: 80%;
+      left: 0; } }
 
 .section {
   width: 100%;
@@ -93,6 +119,10 @@ aside.social {
     width: 200px;
     height: 200px;
     padding: 0.5em; }
+    @media (max-width: 450px) {
+      .section .profile-img {
+        width: 120px;
+        height: 120px; } }
   .section .phone-box {
     width: 100%;
     height: 615px; }
@@ -101,10 +131,15 @@ aside.social {
   .section-main-header h1 {
     font-family: raleway-thin;
     font-size: 5em;
-    padding-top: 3em; }
-    @media (max-width: 400px) {
+    padding-top: 3em;
+    /* Portrait and Landscape */ }
+    @media (max-width: 1024px) {
       .section-main-header h1 {
-        font-size: 2em; } }
+        font-size: 2em;
+        padding-top: 2em; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      .section-main-header h1 {
+        padding-top: 1em; } }
     .section-main-header h1:after {
       display: block;
       content: '';
@@ -127,6 +162,9 @@ aside.social {
       font-family: raleway-thin;
       font-size: 4em;
       font-weight: 900; }
+      @media (max-width: 600px) {
+        .section-header h1 {
+          font-size: 2em; } }
       .section-header h1:after {
         display: block;
         content: '';
@@ -139,10 +177,10 @@ aside.social {
             width: 50%; } }
         @media (max-width: 600px) {
           .section-header h1:after {
-            width: 65%; } }
+            display: none; } }
         @media (max-width: 400px) {
           .section-header h1:after {
-            width: 100%; } }
+            display: none; } }
   .section-content {
     margin: 1em auto; }
   .section--white {
@@ -275,6 +313,16 @@ a {
   color: #000000; }
   a:focus, a:active, a:visited {
     color: #000000; }
+
+@media (max-width: 600px) {
+  #vortex, #vortexBtn {
+    display: none; }
+  .skill-tile {
+    margin: auto; } }
+
+@media (min-width: 601px) {
+  .skills-tiles {
+    display: none; } }
 
 /* Some helper classes, will be moved to own partial if grows */
 .m-t-1 {

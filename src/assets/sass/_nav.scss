@@ -10,17 +10,32 @@
 
 		i.fa{
 			font-size: 3em;
-			margin-top: 28px;			
+			margin-top: 28px;
+			top: 0;		
 		}
 	}
 
 	.button--m-r-12{
 		position: fixed;
-		right: 21%;
+		right: 17%;
+
+		@media (max-width:1023px){
+			right: 25%;
+		}
+		@media (max-width: 600px){
+			right: 17%;
+		}
 	}
 	.button--m-l-12{
 		position: fixed;
-		left: 21%;
+		left: 17%;
 		top: 0;
+
+		@media (max-width:1023px){
+			left: 25%;
+		}
+		@media (max-width: 600px){
+			left: 17%;
+		}		
 	}	
 }
