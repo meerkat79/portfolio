@@ -79,10 +79,13 @@ aside.social {
   -webkit-animation-duration: 1s; }
 
 .section {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 1em; }
   .section video {
     position: absolute;
     width: 100%; }
+  .section button {
+    width: 100px; }
   .section .well {
     background-color: rgba(245, 245, 245, 0.65);
     background-image: none; }
@@ -186,7 +189,7 @@ aside.social {
   .parallax-4 {
     background-image: url("../img/stars.jpg"); }
   .parallax-5 {
-    background-image: url("../img/cityview2-faded.jpg"); }
+    background-image: url("../img/cityview2.jpg"); }
   .parallax-6 {
     background-image: url("../img/park-faded.jpg"); }
   .parallax-7 {
@@ -265,6 +268,9 @@ aside.social {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800000', endColorstr='#a87f0000',GradientType=1 );
   border: 1px solid #800000; }
 
+.img-thumbnail .caption p {
+  font-size: 0.5em; }
+
 a {
   color: #000000; }
   a:focus, a:active, a:visited {
@@ -276,6 +282,9 @@ a {
 
 .m-b-1 {
   margin-bottom: 1em; }
+
+.p-b-1 {
+  padding-bottom: 1em; }
 
 .arrow-down {
   position: absolute;

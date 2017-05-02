@@ -1,11 +1,16 @@
 .section {
 
 	width: 100%;
+	padding-bottom: 1em;
 
 	video {
 		position: absolute;
 		width: 100%;
 	}
+
+	button {
+		width: 100px;
+	}	
 
 	.well{
 		background-color: rgba(245, 245, 245, 0.65);

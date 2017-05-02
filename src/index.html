@@ -50,8 +50,8 @@
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About Me</a></li>
 				<li><a href="#skills">Skills</a></li>
-				<li><a href="#lab">Lab</a></li>
 				<li><a href="#work">Work</a></li>
+				<li><a href="#lab">Lab</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>		
 		</aside>
@@ -86,7 +86,7 @@
 		</aside>
 		
 		<!-- main landing section, section1 -->
-		<div id="home" class="section section--white parallax parallax-1 section1">
+		<section id="home" class="section section--white parallax parallax-1 section1">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -100,18 +100,20 @@
 			<div id="arrow-down" class="arrow-down animated">
 				<a href="#about"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
 			</div>
-		</div>
+		</section>
 
 		<!-- About me, section2 -->
-		<div id="about" class="section section--white parallax parallax-5 section2">
+		<section id="about" class="section section--white parallax parallax-5 section2">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
+
 						<div class="section-header animated slideInLeft">
 							<h1 class="text-center">About Me</h1>	
 						</div>
-						<article class="section-content">
-							<img src="assets/img/rudi-portrait.jpg" class="img-circle profile-img pull-left" alt="rudi's portrait">
+
+						<article class="section-content well">
+							<img src="assets/img/rudi-portrait2.jpg" class="img-circle profile-img pull-left" alt="rudi's portrait">
 							<p>
 								For the past 4 years I have worked with the core tools of HTML, CSS and Javascript but more recently have acquired AngularJS as well. Please see my skills section.
 								What started as building web sites gradually also became building web applications for the browser with Angular. I am keen to start exploring other frameworks such as Angular 2, Vue and React as well and would welcome projects using these technologies.
@@ -119,9 +121,9 @@
 							<p>I simply love what I do and love the satisfaction I derive from building out designs and delivering solutions.
 							</p>
 							<p>
-								Web technologies have really become my passion and my goal is to become a lead full stack developer in the near future. I am inclined to think that I will have a MEAN toolkit within the next year or less although I have always also wanted to learn PHP in depth and play with frameworks such as Symfony and Zend as well.
+								Web technologies have really become my passion and my goal is to become a full stack developer in the near future. I am inclined to think that I will have a MEAN toolkit within the next year or less although I have always also wanted to learn PHP in depth and play with frameworks such as Symfony and Zend as well.
 								<br>
-								Besides my passion for web development I also love photography and playing chess although I seem to get little time for either. Other interests include language and literature and I speak five languages to varying degrees, two fluent.
+								Besides my passion for web development I also love photography and playing chess when time alows. Other interests include languages and literature and I speak five languages to varying degrees, two fluent.
 							</p>
 						</article>
 
@@ -130,40 +132,69 @@
 						</article>
 						<div class="col-sm-8 col-sm-offset-2">
 							<div class="row">
-							<h3 class="text-center">Some memories from the last three years</h3>
+								<h3 class="text-center">Some memories from the last three years</h3>
+
 								<div class="col-sm-6">
+
 									<div class="img-thumbnail">
 										<img src="assets/img/work/meetup.jpg" class="work-imgs" alt="">
-									</div>									
+										<div class="caption">
+											<p>A former colleague prepares for a Javascript Meetup at work</p>	
+										</div>										
+									</div>
+
 									<div class="img-thumbnail">
 										<img src="assets/img/work/ci-training.jpg" class="work-imgs" alt="">
+										<div class="caption">
+											<p>Sitting in on a continious improvement training course</p>	
+										</div>
 									</div>
+
 									<div class="img-thumbnail">
 										<img src="assets/img/work/devices.jpg" class="work-imgs" alt="">
+										<div class="caption">
+											<p>Some device and cross browser testing</p>	
+										</div>
 									</div>
+
 								</div>
+
 								<div class="col-sm-6">
-									<div class="img-thumbnail">
-										<img src="assets/img/work/meetup2.jpg" class="work-imgs" alt="">
-									</div>
+
 									<div class="img-thumbnail">
 										<img src="assets/img/work/meetup3.jpg" class="work-imgs" alt="">
+										<div class="caption">
+											<p>Just another day at a Javascript meetup</p>
+										</div>
+									</div>									
+
+									<div class="img-thumbnail">
+										<img src="assets/img/work/meetup2.jpg" class="work-imgs" alt="">
+										<div class="caption">
+											<p>Another Javascript meetup and everybody is listening intently</p>	
+										</div>
 									</div>
+
 									<div class="img-thumbnail">
 										<img src="assets/img/work/techhub.jpg" class="work-imgs" alt="">
-									</div>														
-								</div>							
+										<div class="caption">
+											<p>Investigatiing future technologies at The Techhub</p>
+										</div>	
+									</div>
+
+								</div>
+
 							</div>
 						</div>
 
 					</div>					
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 
 	<!-- Skills -->
-	<div id="skills" class="section section--white parallax parallax-6 section3">
+	<section id="skills" class="section section--white parallax parallax-6 section3">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -188,77 +219,106 @@
 					</div>
 					<button id='vortexBtn' class="btn btn-primary btn-maroon center-block">Pause</button>
 
-					<article class="section-content">
+					<article class="section-content well">
 						<p>
-							Curabitur sit amet tellus metus. Vivamus in tincidunt odio. Mauris venenatis aliquam varius. Proin pulvinar ante at orci sagittis, non suscipit ante egestas. Aliquam ex nunc, tincidunt vel lacus non, commodo ornare nulla. Nulla ac diam lectus. Donec commodo ut velit vitae placerat. Cras eget sagittis nisl. Nam quis justo nec ipsum accumsan gravida ut hendrerit augue. Mauris dictum dui libero, nec mollis leo laoreet eu.
+							Working in development and in web development specifically I have learned the following tools, many of which have become industry standard:
 						</p>
 						<p>
-							Quisque faucibus magna consectetur, bibendum nibh ut, faucibus tortor. Vivamus quis ipsum arcu. Vestibulum dapibus eu libero in tincidunt. Nam ex enim, pharetra vel congue vitae, ullamcorper eu risus. Suspendisse pellentesque mauris enim, quis fermentum libero finibus at. In hendrerit, libero id ullamcorper blandit, lectus arcu vulputate tellus, quis pulvinar nibh mauris sit amet libero. 
+							For development itself there is <strong>jQuery</strong>, a hugely popular Javascript library. 
+							<strong>Angular</strong>, the most popular framework not so long ago and still first choice for many. 
+							<strong>Jasmine</strong> framework for testing coupled with <strong>Karma</strong> as test runner. 
+							Gulp and Grunt as Javascript task runners and finally Sass and Less as CSS preprocessors.
+							I am familiar at using <strong>Node Package Manager</strong> as well as <strong>Bower</strong>.
+							I have worked with quite a few CMS systems and have ample exeprience in building either templates or components that need to integrate into a particular CMS systems. You can find an example of a Wordpress site for which I built a custom template at <strong><a href="http://www.thurrockchessclub.co.uk/">Thurrock Chess Club</a></strong>.
+							In terms of repositories there are many to use of course, feel free to visit my <strong><a href="https://github.com/meerkat79?tab=repositories" target="_blank">Github</a></strong> or <strong><a href="https://bitbucket.org/meerkat79/" target="_blank">Bitbucket</a></strong> accounts for some examples. I am also familiar with using Apache Subversion (SVN).
+						</p>
+						<p>
+							For project management and task management I have used many systems over the years. Jira is a favourite out of the many but I have used custom or bespoke software as well as solutions such as Pivotal tracker, etc.
+							Finally there is debugging and my go-to option for that is Chrome Dev Tools, although I would be just as ease in Firefox Dev Tools or Firebug, if asked to use those instead.
 						</p>
 					</article>							
 				</div>
 
 			</div>
 		</div>
-	</div>
+	</section>
 </div>
 
 <!-- work -->
-<div id="work" class="section section--pale parallax section4">
+<section id="work" class="section section--pale parallax parallax-2 section4">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
+
 				<div class="section-header animated slideInLeft">
 					<h1 class="text-center">Work</h1>							
 				</div>
-				<article class="section-content">						
+
+				<article class="section-content well">						
 					<img src="assets/img/work/cake.jpg" class="img-circle profile-img pull-left" alt="rudi's portrait">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla ex et efficitur mattis. Sed at libero non dolor semper scelerisque. Etiam at iaculis elit, ut mattis nunc. Pellentesque libero nunc, vulputate ac nibh maximus, fringilla porta justo. Suspendisse auctor justo rutrum metus pretium aliquam. Sed sollicitudin vel tellus nec molestie. Nulla blandit pretium nunc at dictum. Mauris malesuada vulputate convallis. Aenean tempor ultricies auctor. Etiam vel quam at libero pretium laoreet eget eu urna. Fusce nec imperdiet ipsum. Proin eros sapien, congue ut condimentum et, venenatis sit amet libero. Morbi sit amet nibh non eros lacinia tincidunt et eget quam. Morbi commodo ornare lorem sodales ultrices. Aenean sed blandit felis, vel tristique est. Morbi sed lorem malesuada, sollicitudin nulla nec, facilisis velit.
+						My professional web development career started at a digital agency based in Turkey called <strong><a href="https://www.vidizayn.com/" target="_blank">Vidizayn</a></strong>. I worked as part of a team that built a b2b solution and this was a great chance to collaborate and learn from others. Working with project managers, designers and other developers we subscribed to Agile methodologies to deliver a web application.
 					</p>
 					<p>
-						Integer gravida est ante, sed fringilla nisl bibendum porttitor. Donec sit amet malesuada velit. Sed diam lectus, dapibus in quam sit amet, dictum vestibulum neque. In in fermentum massa. Integer fermentum volutpat justo eget sodales. Praesent ac felis congue, ultrices massa vel, porta nisl. In lobortis eros quis velit consequat, ut mattis justo faucibus. Suspendisse eu libero non tortor commodo blandit ornare id lorem. Aliquam non tellus fermentum, scelerisque turpis eget, iaculis neque. Proin imperdiet suscipit tortor malesuada laoreet. Suspendisse libero velit, lobortis in massa at, facilisis porttitor odio. Ut in nisi pulvinar, eleifend nibh vitae, sagittis eros.
+						Since then I have worked on many, many projects. Besides having done some freelance work I also started working in the digital team at <strong><a href="https://www.productsandservices.bt.com/products/" target="_blank">British Telecom</a></strong> and in the last six months I worked at an exciting technology company, <strong>EPAY</strong>. EPAY, among other things, build web applications of the highest standard and it was a real insight to learn from some of the best in the industry.
+					</p>
+					<p>
+						My last production project was a sales site for a dropshipping solution at EPAY that should be launched soon. Below are some of the projects I have had the priviledge to have worked on or built myself, such as the BT Contact Us pages. The latter is built using AngularJS and consumed API data. I also worked on the <strong>how to guides</strong> and the various account management applications such as My Mobile which was also built using AngularJS.
+					</p>
+					<p>
+						Please note that for the account management pages you will need to log in with a BT account in order to view the pages.
 					</p>
 
-					<div class="row">
-						<div class="col-sm-4">
-							<a href="https://www.bt.com/help/home/contactus" target="_blank">
-								<span class="project-img project-img--contact"></span>						
-							</a>
-						</div>
-						<div class="col-sm-4">
-							<a href="https://www.bt.com/help/mobile/index.html?s_intcid=mobilehub_box:C_mobilehowtoguides#" target="_blank">
-								<span class="project-img project-img--how-guides"></span>
-							</a>
-						</div>
-						<div class="col-sm-4">
-							<a href="https://home.bt.com/login/loginForm" target="_blank">
-								<span class="project-img project-img--mobile"></span>
-							</a>
-						</div>
-
-					</div>						
 				</article>
+
 			</div>
 		</div>
+
+		<div class="row">
+
+			<div class="col-sm-4">
+				<a href="https://www.bt.com/help/home/contactus" target="_blank">
+					<span class="project-img project-img--contact"></span>						
+				</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://www.bt.com/help/mobile/index.html?s_intcid=mobilehub_box:C_mobilehowtoguides#" target="_blank">
+					<span class="project-img project-img--how-guides"></span>
+				</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://home.bt.com/login/loginForm" target="_blank">
+					<span class="project-img project-img--mobile"></span>
+				</a>
+			</div>
+			
+		</div>
+
 	</div>
-</div>
+</section>
 
 <!-- experiments -->
-<div id="lab" class="section section--white parallax parallax-3 section3">
+<section id="lab" class="section section--white parallax parallax-3 section3">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="section-header animated slideInRight">
 					<h1 class="text-center">Lab</h1>
 				</div>
-				<article class="section-content">
+				<article class="section-content well">
 					<img src="assets/img/rudi-portrait.jpg" class="img-circle profile-img pull-right" alt="rudi's portrait">
 					<p>
-						Curabitur sit amet tellus metus. Vivamus in tincidunt odio. Mauris venenatis aliquam varius. Proin pulvinar ante at orci sagittis, non suscipit ante egestas. Aliquam ex nunc, tincidunt vel lacus non, commodo ornare nulla. Nulla ac diam lectus. Donec commodo ut velit vitae placerat. Cras eget sagittis nisl. Nam quis justo nec ipsum accumsan gravida ut hendrerit augue. Mauris dictum dui libero, nec mollis leo laoreet eu.
+						As part of the process of learning new tools and techniques I often create sanbox projects such as the ones that can be found on the links below. This helps me to get a greater understanding of the underlying principles and a real sense of how something might work. Most of the time I build these on my local machine and they never get placed online as they are for me only and for the same reason I would not place them on a repository.
 					</p>
 					<p>
-						Quisque faucibus magna consectetur, bibendum nibh ut, faucibus tortor. Vivamus quis ipsum arcu. Vestibulum dapibus eu libero in tincidunt. Nam ex enim, pharetra vel congue vitae, ullamcorper eu risus. Suspendisse pellentesque mauris enim, quis fermentum libero finibus at. In hendrerit, libero id ullamcorper blandit, lectus arcu vulputate tellus, quis pulvinar nibh mauris sit amet libero. Phasellus ut faucibus purus, id maximus massa. Proin aliquet mi purus, ac imperdiet enim imperdiet at. Mauris nec faucibus nunc. Fusce at dui nec odio condimentum dapibus a non mi. Fusce a efficitur massa, ac tristique ligula. Phasellus malesuada convallis varius.
+						Below you will however find some examples of ones I have happened to place online, please feel free to visit them but realise they are just prototypes without any designs etc.
+					</p>
+					<p>
+						Bibliomate was an exercise in using Angular with ES6 syntax and therefore makes use of TypeScript. Classic Cars is a small SPA where I played with building custom directives such as product panels with navigational tabs as well as a customised review component that can add to the products directive. Finally there is a small ToDo application that has two views, left and right. The left view is for adding a ToDo item. The right view should then display the data representation of what is on the left.
+					</p>
+
+					<p>
+						I have experimented a lot this way and continue to do so. Keep an eye on my repositories, links below, where I will posisbly push more such examples to.
 					</p>
 
 					<div class="row">
@@ -303,10 +363,10 @@
 			</div>
 		</div>
 	</div>
-</div>			
+</section>			
 
 <!-- contact -->
-<div id="contact" class="section section--gray parallax parallax-7 section3">
+<section id="contact" class="section section--gray parallax parallax-7 section3">
 
 	<div class="container">
 		<div class="row">
@@ -322,64 +382,44 @@
 
 				<div class="row">
 					<div class="col-sm-6">
-						<form class="well">
+						<form class="well" action="submit.php" method="post" name="contact-form">
 							<div class="form-group">
 								<label class="control-label">Your Name</label>
-
-								<div class="">
-									<input type="text" class="form-control" id="name" placeholder="Name" required>
-								</div>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
 							</div>
 
 							<div class="form-group">
 								<label for="inputEmail3" class="control-label">Your Email</label>
-
-								<div class="">
-									<input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-								</div>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
 							</div>
 
 							<div class="form-group">
 								<label class="control-label">Your Number</label>
-
-								<div class="">
-									<input type="tel" class="form-control" id="number" placeholder="Telephone Number" required>
-								</div>
+								<input type="tel" class="form-control" id="number" name="number" placeholder="Telephone Number" required>
 							</div>
 
 
 							<div class="form-group">
 								<label class="control-label">Preferred method of contact</label>
-
-								<div class="">
-									<select class="space form-control">
-										<option value="1" selected="selected">E-Mail</option>
-										<option value="2">Telephone</option>
-									</select>
-								</div>
+								<select class="space form-control" name="selection">
+									<option value="1" selected="selected">E-Mail</option>
+									<option value="2">Telephone</option>
+								</select>
 							</div>
 
 							<div class="form-group">
 								<label class="control-label">Subject</label>
-
-								<div class="">
-									<input type="text" class="form-control" id="subject" placeholder="Subject" required>
-								</div>
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
 							</div>
 
 							<div class="form-group">
 								<label class="control-label">Message</label>
-
-								<div class="">
-									<textarea type="text" class="form-control" id="message" placeholder="How may I help?"
-									required></textarea>
-								</div>
+								<textarea type="text" class="form-control" id="message" name="message" placeholder="How may I help?"
+								required></textarea>
 							</div>
 
 							<div class="form-group">
-								<div class="">
-									<button type="submit" class="btn btn-default">Send</button>
-								</div>
+								<button type="submit" class="btn btn-default">Send</button>
 							</div>
 						</form>							
 					</div>
@@ -393,7 +433,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
