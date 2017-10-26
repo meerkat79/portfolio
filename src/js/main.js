@@ -73,4 +73,21 @@ $(document).ready(function(){
 		
 	});
 
+	$('#contactBtn').on('click', function(){
+		$.post(
+			"post.php",
+			$("#contactForm").serialize(),
+			function(data, status){
+				if(status === 'success'){
+					$('.success').removeClass('hide');
+					$('.failure').addClass('hide');
+
+				}
+				else if(status === 'failure'){					
+					$('.failure').removeClass('hide');
+					$('.success').addClass('hide');
+				}
+			});		
+	});
+
 });
