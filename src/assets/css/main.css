@@ -63,7 +63,7 @@ aside {
   display: none;
   width: 20%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #ffffff;
   z-index: 1000; }
   @media (max-width: 1023px) {
     aside {
@@ -297,6 +297,10 @@ aside.social {
   outline: none;
   box-shadow: none;
   -webkit-box-shadow: none; }
+
+  .text-white {
+    color: #ffffff;
+  }
 
 /*Extends here as bootstrap sass files not included*/
 .btn-maroon, .btn-maroon:active, .btn-maroon:focus {
